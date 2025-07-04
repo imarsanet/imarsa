@@ -5,14 +5,9 @@
   --text-color: #333;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
   background-color: var(--light-bg);
   color: var(--text-color);
 }
@@ -22,14 +17,13 @@ body {
   margin: auto;
   padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 header {
   background-color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .logo {
@@ -37,26 +31,23 @@ header {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  align-items: center;
 }
 
 nav li {
-  display: inline-block;
+  display: block;
 }
 
 nav a {
   display: block;
   padding: 0.5rem 1rem;
+  font-weight: bold;
   text-decoration: none;
   color: var(--green);
-  font-weight: bold;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
@@ -65,49 +56,26 @@ nav a:hover {
 }
 
 .hero {
+  text-align: center;
+  padding: 5rem 2rem;
   background: linear-gradient(to right, var(--green), var(--orange));
   color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero span {
-  color: var(--light-bg);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: white;
-  color: var(--green);
+  margin-top: 1.5rem;
   padding: 1rem 2rem;
-  border-radius: 12px;
+  background: white;
+  color: var(--green);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: background 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: var(--orange);
+  background: var(--orange);
   color: white;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: white;
-  font-size: 0.9rem;
-  color: #777;
-}
