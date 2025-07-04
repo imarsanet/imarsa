@@ -3,95 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>İMARSA - Yatırımsa, İMARSA!</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #fff;
-      border-bottom: 2px solid #eee;
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-
-    header img {
-      width: 140px;
-      max-width: 100%;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      color: #446622;
-      font-size: 2em;
-    }
-
-    header p {
-      font-size: 1.1em;
-      color: #e0891d;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-
-    section {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section h2 {
-      margin-bottom: 10px;
-      color: #333;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    section p {
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.5em; }
-      header p { font-size: 1em; }
-    }
-  </style>
+  <title>İMARSA | Yatırımsa İMARSA</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="İMARSA Logosu" />
-    <h1>İMARSA</h1>
-    <p>Yatırımsa, İMARSA!</p>
+    <div class="container">
+      <img src="assets/logo.png" alt="İMARSA Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Arsalar</a></li>
+          <li><a href="#">Yatırım Rehberi</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Hakkımızda</h2>
-    <p>İMARSA, arsa ve gayrimenkul yatırımlarında uzmanlaşmış, güvenilir ve yenilikçi bir markadır. Amacımız, müşterilerimize geleceğe değer katan yatırımlar sunmaktır.</p>
-  </section>
-
-  <section>
-    <h2>İletişim</h2>
-    <p>Email: info@imarsa.com.tr</p>
-    <p>Telefon: +90 555 000 00 00</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Yatırımsa <span>İMARSA</span></h1>
+      <p>Güvenilir, değerli ve kazandıran arsa yatırımları burada başlar.</p>
+      <a href="#" class="cta-button">Arsaları Keşfet</a>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 İMARSA – Tüm hakları saklıdır.
+    <p>&copy; 2025 İMARSA. Tüm hakları saklıdır.</p>
   </footer>
-
 </body>
 </html>
+
