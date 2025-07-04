@@ -9,3 +9,128 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .hero a {
+      background-color: #E6941E;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .feature {
+      flex: 1 1 250px;
+      margin: 20px;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_2023.png/600px-Logo_2023.png" alt="İMARSA Logo">
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#neden">Neden İMARSA?</a>
+      <a href="#arsalar">Arsalar</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Yatırımsa, İMARSA</h1>
+    <p>Geleceğe sağlam adımlar atın, doğru yerden arsa alın.</p>
+    <a href="#arsalar">Arsaları İncele</a>
+  </div>
+
+  <section class="section" id="neden">
+    <h2>Neden İMARSA?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Güvenilir Tapular</h3>
+        <p>Tüm arsalar noter onaylı ve tapulu olarak sunulur.</p>
+      </div>
+      <div class="feature">
+        <h3>Karlı Yatırımlar</h3>
+        <p>Değer kazanan bölgelerde fırsatları kaçırmayın.</p>
+      </div>
+      <div class="feature">
+        <h3>İmar Bilgilendirmesi</h3>
+        <p>Her parsel için detaylı imar durumu sunulur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="arsalar">
+    <h2>Öne Çıkan Arsalar</h2>
+    <p style="text-align: center;">Yakında eklenecektir...</p>
+  </section>
+
+  <section class="section" id="iletisim">
+    <h2>Bize Ulaşın</h2>
+    <p style="text-align: center;">info@imarsa.net - 0 (532) 000 00 00</p>
+  </section>
+
+  <footer>
+    &copy; 2025 İMARSA. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
